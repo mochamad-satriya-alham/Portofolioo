@@ -286,6 +286,68 @@ span {
 }
 
 .skils-column:nth-child(1) .skils-content .progress:nth-child(3) .bar span {
-    width: 15%;
+    width: 10%;
 }
 
+
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    background-color: darkblue
+}
+
+.contact .heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact .input-box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact .input-box input, .contact .input-box textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .input-box textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact .btn-box {
+    text-align: center;
+}
+
+.contact .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .btn:hover {
+    background-color: #0056b3;
+}
