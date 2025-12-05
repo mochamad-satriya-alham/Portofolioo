@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Satriya</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header class="header">
         <a href="#" class="logo"><span>Por</span>tofolio</a>
 
@@ -21,96 +27,211 @@
         </nav>
     </header>
 
+    <!-- HOME SECTION -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, I'm Mochamad Satriya Alham</h1>
-            <h3>Frontend Developer</h3>
+
+            <!-- TYPING EFFECT TEXT -->
+            <h1 class="typing-text"></h1>
+            <h3 class="typing-job"></h3>
+
             <div class="btn-box">
                 <a href="#">Hire Me</a>
                 <a href="#">Let's Talk</a>
             </div>
+
             <div class="home-sci">
                 <a href="https://www.instagram.com/striyaya/profilecard/?igsh=MTlzdDRhbmdnb292bQ=="><i class='bx bxl-instagram-alt'></i></a>
-                <a href=""><i class='bx bxl-facebook-circle'></i></a>
-                <a href=""><i class='bx bxl-whatsapp-square' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp-square'></i></a>
             </div>
         </div>
     </section>
 
-    <!-- about design -->
+
+    <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
-        <span class="spin"></span>
 
         <div class="about-img">
-            <img src="fo.jpg" alt="profile">
-            <span class="cc-spin"></span>
+            <img src="assets/image/image.jpg" alt="profile">
         </div>
+
         <div class="about-content">
-            <h3>Fronted Developer!</h3>
-            <p>Saya adalah pelajar SMK Wikrama Bogor jurusan Pengembangan
-                Perangkat Lunak dan Game (PPLG)<br>yang antusias dalam
-                mempelajari teknologi dan pemrograman. Saya memiliki keahlian
-                dalam pengembangan web menggunakan<br>HTML, CSS,
-                PHP, serta framework Laravel dan Bootstrap.</p>
+
+            <!-- TYPING EFFECT ABOUT -->
+            <h3 class="typing-about"></h3>
+
+            <p>
+                Saya adalah pelajar SMK Wikrama Bogor jurusan Pengembangan Perangkat Lunak dan Game (PPLG)
+                yang antusias dalam mempelajari teknologi dan pemrograman. Saya memiliki keahlian
+                dalam pengembangan web menggunakan HTML, CSS, PHP, serta framework Laravel dan Bootstrap.
+            </p>
+
             <div class="btn-box btns">
                 <a href="#" class="btn">Read More</a>
             </div>
+
         </div>
     </section>
-    <!-- skill design -->
+
+
+    <!-- SKILL SECTION -->
     <section class="skils" id="skils">
         <h2 class="heading">My<span>Skills</span></h2>
 
         <div class="skils-row">
             <div class="skils-column">
-                <h3 class="title">Coding Skils</h3>
+                <h3 class="title">Coding Skills</h3>
+
                 <div class="skils-box">
                     <div class="skils-content">
+
                         <div class="progress">
                             <h3>HTML <span>80%</span></h3>
                             <div class="bar"><span></span></div>
-
                         </div>
+
                         <div class="progress">
                             <h3>CSS <span>60%</span></h3>
                             <div class="bar"><span></span></div>
-
                         </div>
+
                         <div class="progress">
-                            <h3>Java Script <span>10%</span></h3>
+                            <h3>JavaScript <span>10%</span></h3>
                             <div class="bar"><span></span></div>
-
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- contact design -->
-<section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <span class="spin"></span>
 
-    <div class="contact-form">
-        <form action="#" method="post">
-            <div class="input-box">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your Name">
-            </div>
-            <div class="input-box">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your Email">
-            </div>
-            <div class="input-box">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-            </div>
-            <div class="btn-box">
-                <button type="submit" class="btn">Send Message</button>
-            </div>
-        </form>
-    </div>
-</section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-container">
+            <form action="#" method="post" class="contact-form">
+
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+
+                <div class="input-box">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // ============================
+        //        TYPING HOME
+        // ============================
+        const nameText = "Hi, I'm Mochamad Satriya Alham";
+        const jobTexts = ["Frontend Developer", "Laravel Developer", "UI/UX Learner"];
+
+        let index = 0;
+        let charIndex = 0;
+        let jobIndex = 0;
+
+        const typingText = document.querySelector(".typing-text");
+        const typingJob = document.querySelector(".typing-job");
+
+        // Ngetik nama
+        function typeName() {
+            if (charIndex < nameText.length) {
+                typingText.textContent += nameText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeName, 80);
+            } else {
+                setTimeout(typeJob, 500);
+            }
+        }
+
+        // Ngetik pekerjaan looping
+        function typeJob() {
+            let current = jobTexts[jobIndex];
+            typingJob.textContent = current.substring(0, index);
+            index++;
+
+            if (index <= current.length) {
+                setTimeout(typeJob, 100);
+            } else {
+                setTimeout(deleteJob, 1500);
+            }
+        }
+
+        function deleteJob() {
+            let current = jobTexts[jobIndex];
+            typingJob.textContent = current.substring(0, index);
+            index--;
+
+            if (index >= 0) {
+                setTimeout(deleteJob, 70);
+            } else {
+                jobIndex = (jobIndex + 1) % jobTexts.length;
+                setTimeout(typeJob, 100);
+            }
+        }
+
+        typeName();
+
+
+
+        // ============================
+        //       ABOUT TYPING
+        // ============================
+        const aboutText = "Frontend Developer!";
+        let aboutIndex = 0;
+        const aboutElement = document.querySelector(".typing-about");
+
+        function typeAbout() {
+            if (aboutIndex < aboutText.length) {
+                aboutElement.textContent += aboutText.charAt(aboutIndex);
+                aboutIndex++;
+                setTimeout(typeAbout, 80);
+            }
+        }
+        setTimeout(typeAbout, 2500);
+
+
+
+        // ============================
+        //     SCROLL REVEAL
+        // ============================
+        const revealElements = document.querySelectorAll(".home, .about, .skils, .contact");
+
+        window.addEventListener("scroll", () => {
+            revealElements.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                const height = window.innerHeight - 150;
+
+                if (top < height) {
+                    el.classList.add("visible");
+                }
+            });
+        });
+
+    </script>
+
 </body>
+
 </html>
